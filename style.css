@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    gap: 5rem;
+}
+
+#user-score, #computer-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top: 4rem;
+}
+
+#msg {
+    color: #fff;
+    background-color: #081b31;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.restart-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background-color: #00796B;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .choice {
+        height: 110px;
+        width: 110px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .choices {
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .score-board {
+        flex-direction: row;
+        gap: 5rem;
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    #user-score, #computer-score {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    #msg {
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+
+    .msg-container{
+        margin-top: 4rem;
+    }
+
+    .restart-container{
+        margin-top: 0.8rem;
+        padding: 0.2rem;
+    }
+}
